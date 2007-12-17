@@ -13,7 +13,6 @@ Source0:	http://www.citi.umich.edu/projects/nfsv4/linux/nfs4-acl-tools/%{name}-%
 BuildRequires:  qt4-devel
 BuildRequires:	libtool
 BuildRequires:	libattr-devel
-BuildRoot:	    %{_tmppath}/%{name}-%{version}
 
 %description
 This package contains commandline ACL utilities for the Linux NFSv4 client.

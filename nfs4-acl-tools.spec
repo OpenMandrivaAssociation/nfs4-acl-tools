@@ -1,6 +1,6 @@
 %define name	nfs4-acl-tools
-%define version	0.3.2
-%define release	%mkrel 3
+%define version	0.3.3
+%define release	%mkrel 1
 
 Name:		%{name}
 Version:	%{version}
@@ -9,7 +9,7 @@ Summary:	NFSv4 ACL tools
 Group:		System/Kernel and hardware
 License:	LGPL and GPL
 URL:		http://www.citi.umich.edu/projects/nfsv4/linux/
-Source0:	http://www.citi.umich.edu/projects/nfsv4/linux/nfs4-acl-tools/%{name}-%{version}.tar.bz2
+Source0:	http://www.citi.umich.edu/projects/nfsv4/linux/nfs4-acl-tools/%{name}-%{version}.tar.gz
 BuildRequires:  qt4-devel
 BuildRequires:	libtool
 BuildRequires:	libattr-devel

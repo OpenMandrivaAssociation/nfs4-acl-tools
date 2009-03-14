@@ -10,6 +10,7 @@ Group:		System/Kernel and hardware
 License:	LGPL and GPL
 URL:		http://www.citi.umich.edu/projects/nfsv4/linux/
 Source0:	http://www.citi.umich.edu/projects/nfsv4/linux/nfs4-acl-tools/%{name}-%{version}.tar.gz
+Patch:      nfs4-acl-tools-0.3.3-replace-strlcpy.patch
 BuildRequires:  qt4-devel
 BuildRequires:	libtool
 BuildRequires:	libattr-devel
@@ -27,6 +28,7 @@ This package contains GUI ACL utilities for the Linux NFSv4 client.
 
 %prep
 %setup -q
+%patch -p 1
 
 %build
 %configure2_5x
@@ -45,7 +47,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc README TODO VERSION INSTALL COPYING CHANGELOG
+%doc README TODO VERSION INSTALL COPYING
 %{_bindir}/nfs4_getfacl
 %{_bindir}/nfs4_setfacl
 %{_bindir}/nfs4_editfacl

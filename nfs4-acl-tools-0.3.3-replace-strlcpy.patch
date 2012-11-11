@@ -1,0 +1,12 @@
+diff -Naur --exclude '*~' nfs4-acl-tools-0.3.3/GUI/nfs4-acl-editor/nfs4acleditor.cpp nfs4-acl-tools-0.3.3-replace-strlcpy/GUI/nfs4-acl-editor/nfs4acleditor.cpp
+--- nfs4-acl-tools-0.3.3/GUI/nfs4-acl-editor/nfs4acleditor.cpp	2008-12-03 23:18:24.000000000 +0100
++++ nfs4-acl-tools-0.3.3-replace-strlcpy/GUI/nfs4-acl-editor/nfs4acleditor.cpp	2009-03-14 12:18:28.000000000 +0100
+@@ -569,7 +569,7 @@
+ 		if (i > strlen(ace->who)) {
+ 			dprintf("syncWho(): fromlen %d  tolen %u\n", strlen(ace->who), i);
+ 		}
+-		strlcpy(ace->who, who, NFS4_MAX_PRINCIPALSIZE);
++		strncpy(ace->who, who, NFS4_MAX_PRINCIPALSIZE);
+ 	}
+ }
+ 

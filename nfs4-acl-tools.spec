@@ -1,6 +1,6 @@
 %define name	nfs4-acl-tools
 %define version	0.3.3
-%define release	%mkrel 3
+%define release	%mkrel 2
 
 Name:		%{name}
 Version:	%{version}
@@ -57,4 +57,41 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_bindir}/nfs4-acl-editor
 
+
+
+
+%changelog
+* Mon Sep 14 2009 Thierry Vignaud <tvignaud@mandriva.com> 0.3.3-2mdv2010.0
++ Revision: 440329
+- rebuild
+
+* Sat Mar 14 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.3.3-1mdv2009.1
++ Revision: 354886
+- new version
+- new version
+
+* Tue Jul 29 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.3.2-3mdv2009.0
++ Revision: 253870
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Tue Nov 06 2007 Guillaume Rousse <guillomovitch@mandriva.org> 0.3.2-1mdv2008.1
++ Revision: 106231
+- update to new version 0.3.2
+
+
+* Sat Mar 10 2007 Oden Eriksson <oeriksson@mandriva.com> 0.3.1-1mdv2007.1
++ Revision: 140404
+- fix build
+- fix deps (libattr-devel)
+- fix deps
+
+  + Guillaume Rousse <guillomovitch@mandriva.org>
+    - Imported nfs4-acl-tools-0.3.1-1mdv2007.1 into SVN repository.
+
+* Fri Mar 09 2007 Guillaume Rousse <guillomovitch@mandriva.org> 0.3.1-1mdv2007.1
+- first mdv release
 

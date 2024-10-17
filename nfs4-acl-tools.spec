@@ -8,7 +8,7 @@ Release:	%{release}
 Summary:	NFSv4 ACL tools
 Group:		System/Kernel and hardware
 License:	LGPL and GPL
-URL:		http://www.citi.umich.edu/projects/nfsv4/linux/
+URL:		https://www.citi.umich.edu/projects/nfsv4/linux/
 Source0:	http://www.citi.umich.edu/projects/nfsv4/linux/nfs4-acl-tools/%{name}-%{version}.tar.gz
 Patch:      nfs4-acl-tools-0.3.3-replace-strlcpy.patch
 BuildRequires:  qt4-devel

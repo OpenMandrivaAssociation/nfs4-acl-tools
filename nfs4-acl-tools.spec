@@ -11,6 +11,11 @@ License:	LGPL and GPL
 URL:		https://www.citi.umich.edu/projects/nfsv4/linux/
 Source0:	http://www.citi.umich.edu/projects/nfsv4/linux/nfs4-acl-tools/%{name}-%{version}.tar.gz
 Patch:      nfs4-acl-tools-0.3.3-replace-strlcpy.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  qt4-devel
 BuildRequires:	libtool
 BuildRequires:	libattr-devel
